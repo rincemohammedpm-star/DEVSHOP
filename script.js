@@ -1,153 +1,28 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+// Display a welcome message
+function showMessage() {
+    alert("Welcome to DevShop!");
 }
  
-body{
-    background:#f4f4f4;
-    color:#333;
+// Simulate adding a product to the cart
+function addCart() {
+    alert("Product added to cart successfully!");
 }
  
-header{
-    background:#2c3e50;
-    color:white;
-    padding:20px;
-    text-align:center;
+// Contact form button
+function contactMessage() {
+    alert("Thank you! Your message has been sent.");
 }
  
-nav{
-    margin-top:15px;
-}
+// Login button
+function login() {
  
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 12px;
-    font-weight:bold;
-}
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
  
-nav a:hover{
-    color:#f1c40f;
-}
+    if (username === "" || password === "") {
+        alert("Please enter both username and password.");
+    } else {
+        alert("Login Successful!");
+    }
  
-.hero{
-    text-align:center;
-    padding:60px 20px;
-}
- 
-.hero h2{
-    margin-bottom:15px;
-}
- 
-.hero p{
-    margin-bottom:20px;
-}
- 
-button{
-    background:#3498db;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    cursor:pointer;
-    border-radius:5px;
-}
- 
-button:hover{
-    background:#2980b9;
-}
- 
-.products{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-    padding:30px;
-}
- 
-.card{
-    width:220px;
-    background:white;
-    padding:20px;
-    border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    text-align:center;
-}
- 
-.card h3{
-    margin-bottom:10px;
-}
- 
-.card p{
-    margin-bottom:15px;
-    color:#27ae60;
-    font-weight:bold;
-}
- 
-.content{
-    max-width:900px;
-    margin:auto;
-    padding:30px;
-}
- 
-.content h2{
-    margin-bottom:10px;
-    color:#2c3e50;
-}
- 
-.content p{
-    margin-bottom:20px;
-    line-height:1.6;
-}
- 
-form{
-    max-width:500px;
-    margin:auto;
-}
- 
-label{
-    display:block;
-    margin-top:15px;
-    margin-bottom:5px;
-    font-weight:bold;
-}
- 
-input,
-textarea{
-    width:100%;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
- 
-textarea{
-    resize:vertical;
-}
- 
-form button{
-    margin-top:20px;
-    width:100%;
-}
- 
-.login-container{
-    max-width:400px;
-    margin:40px auto;
-    background:white;
-    padding:30px;
-    border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-}
- 
-.login-container h2{
-    text-align:center;
-    margin-bottom:20px;
-}
- 
-footer{
-    background:#2c3e50;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:40px;
 }
