@@ -6,7 +6,7 @@ pipeline{
                     deleteDir()
                     echo "starting checkout"
                     sh '''
-                        git clone https://github.com/rincemohammedpm-star/pipeline-demo.git
+                        git clone https://github.com/rincemohammedpm-star/DEVSHOP.git
                         ls -l
                     '''
                 }
