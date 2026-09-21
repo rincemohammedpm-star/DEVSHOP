@@ -16,7 +16,7 @@ pipeline{
                     echo "starting deployment"
                     sh '''
                         rm -rf var/www/html/*
-                        cp -r pipeline-demo/* /var/www/html/
+                        cp -r DEVSHOP/* /var/www/html/
                         ls -l /var/www/html/
                     '''
                 }
