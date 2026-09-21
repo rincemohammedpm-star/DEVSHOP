@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+        stages{
+            stage('checkout'){
+                steps{
+                    deleteDir()
+                    echo "starting checkout"
+                    sh '''
+                        git clone https://github.com/rincemohammedpm-star/pipeline-demo.git
+                        ls -l
+                    '''
+                }
+            }
+            stage('deploy'){
+                steps{
+                    echo "starting deployment"
+                    sh '''
+                        rm -rf var/www/html/*
+                        cp -r pipeline-demo/* /var/www/html/
+                        ls -l /var/www/html/
+                    '''
+                }
+            }
+        }
+}
